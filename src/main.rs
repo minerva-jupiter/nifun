@@ -21,7 +21,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
                 println!("\n'q' detected. Exiting.");
                 break;
             }
-            print!("\r\x1b[2K{}", now - start_time);
+            print!("\r\x1b[2K{}", next_notif_time - now);
             stdout().flush().unwrap();
             thread::sleep(std::time::Duration::from_millis(100));
         }
