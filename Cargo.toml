@@ -1,0 +1,9 @@
+[package]
+name = "nifun"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crossterm = "0.29.0"
+jiff = "0.2.18"
+notify-rust = "4.12.0"
