@@ -7,6 +7,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let interval: Span = Span::new().minutes(2);
     let start_time = Timestamp::now();
     let mut next_notif_time = start_time.checked_add(interval).unwrap();
+    println!("press 'q' to quit");
     loop {
         let now = Timestamp::now();
         if now >= next_notif_time {
